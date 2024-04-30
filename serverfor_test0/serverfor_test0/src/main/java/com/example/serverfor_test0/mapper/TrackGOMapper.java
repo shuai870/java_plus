@@ -10,6 +10,6 @@ public interface TrackGOMapper {
     @Select("select id from sys_user")
     List<Integer> countUser();
 
-    @Select("select * from data where segmentId =#{id} order by timestamp ASC")
+    @Select("select segmentId,lng,lat from data where segmentId =#{id} order by timestamp ASC")
     List<Track> points(int id);
 }

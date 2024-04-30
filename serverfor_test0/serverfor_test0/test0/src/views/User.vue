@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     fetchSegments() {
-      fetch('http://localhost:9090/tracks')
+      fetch('http://106.53.27.81:8089/tracks')
           .then(response => response.json())
           .then(data => {
             this.segments = data.segments; // 假设API响应包含线段数据

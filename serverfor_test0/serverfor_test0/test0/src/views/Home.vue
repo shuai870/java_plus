@@ -105,7 +105,7 @@ export default {
       this.load()
     },
     load(){
-      fetch("http://localhost:9090/user/page?pageNum=" + this.pageNum + "&pageSize=" + this.pageSize+"&username="+this.username)
+      fetch("http://106.53.27.81:8089/user/page?pageNum=" + this.pageNum + "&pageSize=" + this.pageSize+"&username="+this.username)
           .then(res => res.json())
           .then(res => {
             console.log(res);
